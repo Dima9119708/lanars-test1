@@ -17,7 +17,7 @@ function Wrapper() {
     useEffect(() => {
         debounce(() => {
             dispatch(startAction(true))
-        }, 6000, {})()
+        }, 5000, {})()
     }, [])
 
     useEffect(() => {
@@ -25,7 +25,7 @@ function Wrapper() {
             debounce(() => {
                 dispatch(clickedAction(noClicked))
                 dispatch(numsClearAction())
-            }, 1500)()
+            }, 1000)()
         }
     }, [clickedStatus])
 
