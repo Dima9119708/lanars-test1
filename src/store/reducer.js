@@ -1,13 +1,16 @@
+export const clicked = 'clicked'
+export const noClicked = 'noClicked'
+
 export const numsPushAction = (payload) => ({ type: 'nums/push', payload})
 export const numsPairsPushAction = (payload) => ({ type: 'numPairs/push', payload})
 export const numsClearAction = () => ({ type: 'nums/clear'})
-export const clickedAction = (payload) => ({ type: 'clicked', payload})
+export const clickedAction = (payload) => ({ type: 'clickedStatus', payload})
 export const startAction = (payload) => ({ type: 'start', payload})
 
 const defaultState = {
     nums: [],
     numsPairs: [],
-    clicked: false,
+    clickedStatus: noClicked,
     start: false,
 }
 
@@ -58,12 +61,12 @@ export function reducer(state = defaultState, action) {
             return Object.assign(state, { nums })
         }
 
-        case 'clicked': {
-            let { clicked } = state
+        case 'clickedStatus': {
+            let { clickedStatus } = state
 
-            clicked = action.payload
+            clickedStatus = action.payload
 
-            return Object.assign(state, { clicked })
+            return Object.assign(state, { clickedStatus })
         }
 
         default: {

@@ -3,11 +3,11 @@ import {genIsPrime, getCouples, getRandNumbers, mixing} from "../utils";
 import {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {debounce} from "lodash";
-import {clickedAction, numsClearAction, startAction} from "../store/reducer";
+import {clicked, clickedAction, noClicked, numsClearAction, startAction} from "../store/reducer";
 
 function Wrapper() {
     const [numbers, setNumbers] = useState([])
-    const clicked = useSelector( ({ clicked }) => clicked )
+    const clickedStatus = useSelector( ({ clickedStatus }) => clickedStatus )
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -21,13 +21,13 @@ function Wrapper() {
     }, [])
 
     useEffect(() => {
-        if (typeof clicked !== "boolean") {
+        if (clickedStatus === clicked) {
             debounce(() => {
-                dispatch(clickedAction(true))
+                dispatch(clickedAction(noClicked))
                 dispatch(numsClearAction())
             }, 1500)()
         }
-    }, [clicked])
+    }, [clickedStatus])
 
     return (
         <div className="game">
