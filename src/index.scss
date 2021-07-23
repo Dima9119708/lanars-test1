@@ -56,12 +56,12 @@ body {
 
   .disable {
     opacity: 1;
-    transition: opacity .5s linear;
+    transition: opacity .2s linear;
   }
 
   .enable {
     opacity: 0;
-    transition: opacity .5s linear;
+    transition: opacity .2s linear;
   }
 }
 
