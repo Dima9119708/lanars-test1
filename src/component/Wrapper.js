@@ -25,7 +25,7 @@ function Wrapper() {
             debounce(() => {
                 dispatch(clickedAction(noClicked))
                 dispatch(numsClearAction())
-            }, 1000)()
+            }, 2000)()
         }
     }, [clickedStatus])
 
