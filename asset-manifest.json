@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lanars-test1/static/css/main.5c1f9d9f.chunk.css",
-    "main.js": "/lanars-test1/static/js/main.f1f46689.chunk.js",
-    "main.js.map": "/lanars-test1/static/js/main.f1f46689.chunk.js.map",
+    "main.js": "/lanars-test1/static/js/main.a96c1819.chunk.js",
+    "main.js.map": "/lanars-test1/static/js/main.a96c1819.chunk.js.map",
     "runtime-main.js": "/lanars-test1/static/js/runtime-main.d530e2a5.js",
     "runtime-main.js.map": "/lanars-test1/static/js/runtime-main.d530e2a5.js.map",
     "static/js/2.66b25d97.chunk.js": "/lanars-test1/static/js/2.66b25d97.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.d530e2a5.js",
     "static/js/2.66b25d97.chunk.js",
     "static/css/main.5c1f9d9f.chunk.css",
-    "static/js/main.f1f46689.chunk.js"
+    "static/js/main.a96c1819.chunk.js"
   ]
 }
