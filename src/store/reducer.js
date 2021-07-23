@@ -34,7 +34,7 @@ export function reducer(state = defaultState, action) {
         }
 
         case 'numPairs/push': {
-            const { numPairs, nums } = state
+            const { numsPairs, nums } = state
 
             const count = nums.reduce((acc, val) => {
                 if (val === action.payload) {
@@ -44,10 +44,10 @@ export function reducer(state = defaultState, action) {
             }, 0)
 
             if (count === 2) {
-                numPairs.push(action.payload)
+                numsPairs.push(action.payload)
             }
 
-            return Object.assign(state, { numPairs })
+            return Object.assign(state, { numsPairs })
         }
 
         case 'nums/clear': {
