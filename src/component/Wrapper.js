@@ -1,9 +1,9 @@
 import Card from "./Card";
-import {genIsPrime, getCouples, getRandNumbers, mixing} from "./utils";
+import {genIsPrime, getCouples, getRandNumbers, mixing} from "../utils";
 import {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {debounce} from "lodash";
-import {clickedAction, numsClearAction, startAction} from "./store/reducer";
+import {clickedAction, numsClearAction, startAction} from "../store/reducer";
 
 function Wrapper() {
     const [numbers, setNumbers] = useState([])

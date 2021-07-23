@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
 import { useDispatch } from "react-redux";
-import {clickedAction, numsPairsPushAction, numsPushAction} from "./store/reducer";
+import {clickedAction, numsPairsPushAction, numsPushAction} from "../store/reducer";
 
 const Card = ({ num }) => {
     const [toggleClass, setToggle] = useState('')
