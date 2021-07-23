@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/dima9119708/lanars-test1/static/css/main.f0c8f52b.chunk.css",
-    "main.js": "/dima9119708/lanars-test1/static/js/main.68063e1e.chunk.js",
-    "main.js.map": "/dima9119708/lanars-test1/static/js/main.68063e1e.chunk.js.map",
-    "runtime-main.js": "/dima9119708/lanars-test1/static/js/runtime-main.b2883179.js",
-    "runtime-main.js.map": "/dima9119708/lanars-test1/static/js/runtime-main.b2883179.js.map",
-    "static/js/2.66b25d97.chunk.js": "/dima9119708/lanars-test1/static/js/2.66b25d97.chunk.js",
-    "static/js/2.66b25d97.chunk.js.map": "/dima9119708/lanars-test1/static/js/2.66b25d97.chunk.js.map",
-    "index.html": "/dima9119708/lanars-test1/index.html",
-    "static/css/main.f0c8f52b.chunk.css.map": "/dima9119708/lanars-test1/static/css/main.f0c8f52b.chunk.css.map",
-    "static/js/2.66b25d97.chunk.js.LICENSE.txt": "/dima9119708/lanars-test1/static/js/2.66b25d97.chunk.js.LICENSE.txt"
+    "main.css": "/lanars-test1/static/css/main.f0c8f52b.chunk.css",
+    "main.js": "/lanars-test1/static/js/main.68063e1e.chunk.js",
+    "main.js.map": "/lanars-test1/static/js/main.68063e1e.chunk.js.map",
+    "runtime-main.js": "/lanars-test1/static/js/runtime-main.d530e2a5.js",
+    "runtime-main.js.map": "/lanars-test1/static/js/runtime-main.d530e2a5.js.map",
+    "static/js/2.66b25d97.chunk.js": "/lanars-test1/static/js/2.66b25d97.chunk.js",
+    "static/js/2.66b25d97.chunk.js.map": "/lanars-test1/static/js/2.66b25d97.chunk.js.map",
+    "index.html": "/lanars-test1/index.html",
+    "static/css/main.f0c8f52b.chunk.css.map": "/lanars-test1/static/css/main.f0c8f52b.chunk.css.map",
+    "static/js/2.66b25d97.chunk.js.LICENSE.txt": "/lanars-test1/static/js/2.66b25d97.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b2883179.js",
+    "static/js/runtime-main.d530e2a5.js",
     "static/js/2.66b25d97.chunk.js",
     "static/css/main.f0c8f52b.chunk.css",
     "static/js/main.68063e1e.chunk.js"
