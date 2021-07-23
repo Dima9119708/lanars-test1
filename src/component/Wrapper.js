@@ -3,7 +3,7 @@ import {genIsPrime, getCouples, getRandNumbers, mixing} from "../utils";
 import {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {debounce} from "lodash";
-import {clicked, clickedAction, noClicked, numsClearAction, startAction} from "../store/reducer";
+import {clicked, clickedAction, noClicked, numsClearAction, prevIdxAction, startAction} from "../store/reducer";
 
 function Wrapper() {
     const [numbers, setNumbers] = useState([])
@@ -25,6 +25,7 @@ function Wrapper() {
             debounce(() => {
                 dispatch(clickedAction(noClicked))
                 dispatch(numsClearAction())
+                dispatch(prevIdxAction(null))
             }, 2000)()
         }
     }, [clickedStatus])
@@ -37,7 +38,7 @@ function Wrapper() {
           <div className="game__field">
               {
                   numbers.map( (value, idx) =>
-                      <Card key={idx} num={value} />
+                      <Card key={idx} num={value} idx={idx} />
                   )
               }
           </div>

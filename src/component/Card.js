@@ -1,13 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
 import { useDispatch } from "react-redux";
-import {clicked, clickedAction, noClicked, numsPairsPushAction, numsPushAction} from "../store/reducer";
+import {clicked, clickedAction, noClicked, numsPairsPushAction, numsPushAction, prevIdxAction} from "../store/reducer";
 
-const Card = ({ num }) => {
+const Card = ({ num, idx }) => {
     const [toggleClass, setToggle] = useState('')
     const numsPairs = useSelector( ({ numsPairs }) => numsPairs )
     const clickedStatus = useSelector( ({ clickedStatus }) => clickedStatus )
     const start = useSelector( ({ start }) => start )
+    const prevIdx = useSelector( ({ prevIdx }) => prevIdx )
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -22,6 +23,10 @@ const Card = ({ num }) => {
     }, [clickedStatus, start])
 
     const listenerClick = () => {
+        if (idx === prevIdx) {
+            return false
+        }
+
         setToggle('enable')
 
         if (clickedStatus === noClicked) {
@@ -30,6 +35,7 @@ const Card = ({ num }) => {
 
         dispatch(numsPushAction(num))
         dispatch(numsPairsPushAction(num))
+        dispatch(prevIdxAction(idx))
     }
 
     return (

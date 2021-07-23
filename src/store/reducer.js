@@ -6,17 +6,27 @@ export const numsPairsPushAction = (payload) => ({ type: 'numPairs/push', payloa
 export const numsClearAction = () => ({ type: 'nums/clear'})
 export const clickedAction = (payload) => ({ type: 'clickedStatus', payload})
 export const startAction = (payload) => ({ type: 'start', payload})
+export const prevIdxAction = (payload) => ({ type: 'prevIdx', payload})
 
 const defaultState = {
     nums: [],
     numsPairs: [],
     clickedStatus: noClicked,
     start: false,
+    prevIdx: null,
 }
 
 export function reducer(state = defaultState, action) {
 
     switch(action.type) {
+
+        case 'prevIdx': {
+            let { prevIdx } = state
+
+            prevIdx = action.payload
+
+            return Object.assign(state, { prevIdx })
+        }
 
         case 'start': {
             let { start } = state

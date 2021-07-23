@@ -8,7 +8,7 @@ const isPrime = num => {
 
 const random = num => Math.floor(Math.random() * num)
 
-export function genIsPrime(length = 99) {
+export function genIsPrime(length = 50) {
     return Array(length)
                 .fill(null)
                 .map((_, i) => isPrime(i + 2))
